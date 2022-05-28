@@ -14,24 +14,32 @@ body {
 main {
     margin: auto;
     max-width: 768px;
-    min-height: 100vh;
     padding: 20px;
+}
+
+nav {
+  margin-bottom: 40px;
 }
 
 nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     list-style-type: none;
+    padding: 0;
 }
 
 nav li {
-    margin-left: 30px;
+    margin-left: 20px;
+    margin-top: 30px;
 }
 
 nav li a {
     text-decoration: none;
     color: #C60021;
+    border: 1px solid black;
+    padding: 10px;
 }
 
 header {
@@ -60,7 +68,8 @@ h3 {
 }
 
 hr {
-    border: 1px solid #C60021;
+    border: 0.5px solid #C60021;
+    background-color: #C60021;
 }
 
 section {
@@ -126,8 +135,8 @@ button {
     color: #E3E3E3;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
     nav li {
-        margin-left: 10px;
+        margin-left: 2px;
     }
 }
